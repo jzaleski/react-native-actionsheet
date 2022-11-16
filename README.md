@@ -211,4 +211,10 @@ https://github.com/alessiocancian/react-native-actionsheet/blob/master/lib/optio
         <td>only for ActionSheetCustom</td>
         <td>{}</td>
     </tr>
+        <tr>
+        <td>statusBarTranslucent</td>
+        <td>boolean</td>
+        <td>only for Android</td>
+        <td>false</td>
+    </tr>
 </table>

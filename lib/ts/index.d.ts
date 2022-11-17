@@ -27,7 +27,11 @@ type Props = {
 		wrapper?: ViewStyle,
 		body?: ViewStyle,
 	};
-
+	/**
+	 * Only for Android
+	 */
+	statusBarTranslucent?: boolean;
+	
 	/**
 	 * Change theme color
 	 * @default system theme color

@@ -54,6 +54,40 @@ npm i -S @alessiocancian/react-native-actionsheet
 
 ## Usage
 
+
+### Functional components
+
+```js
+import { useRef } from 'react'
+import ActionSheet from '@alessiocancian/react-native-actionsheet'
+
+const Demo = () => {
+  const actionSheetRef = useRef()
+
+  const showActionSheet = () => {
+    actionSheetRef.current.show()
+  }
+  
+  render() {
+    return (
+      <View>
+        <Text onPress={showActionSheet}>Open ActionSheet</Text>
+        <ActionSheet
+          ref={actionSheetRef}
+          title={'Which one do you like ?'}
+          options={['Apple', 'Banana', 'cancel']}
+          cancelButtonIndex={2}
+          destructiveButtonIndex={1}
+          onPress={(index) => { /* do something */ }}
+        />
+      </View>
+    )
+  }
+}
+```
+
+### Class components
+
 ```js
 import ActionSheet from '@alessiocancian/react-native-actionsheet'
 

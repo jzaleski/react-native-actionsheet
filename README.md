@@ -222,6 +222,12 @@ https://github.com/alessiocancian/react-native-actionsheet/blob/master/lib/optio
         <td></td>
     </tr>
     <tr>
+        <td>disabledIndexes</td>
+        <td>number[]</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>onPress</td>
         <td>function</td>
         <td></td>
